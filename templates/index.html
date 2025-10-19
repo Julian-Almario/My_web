@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mi personal web site" name="Julian Almario">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='img/images/perfil.jpg') }}">
+  <link href="./assets/favicon.ico" rel="icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <title>Julian Almario</title>
+
+  <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+
+<body class="minimal">
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+  <!-- Add your content of header -->
+  <header>
+    <nav class="navbar  navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav ">
+            <li><a href="/" title="">Home</a></li>
+            <li><a href="/portafolio" title="">Portafolio</a></li>
+            <li><a href="about" title="">About me</a></li>
+            <li><a href="./components.html" title="">Blog</a></li>
+          </ul>
+
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Add your site or app content here -->
+  <div class="hero-full-container background-image-container white-text-container"
+    style="background-image: url('{{ url_for('static', filename='img/background.gif') }}')">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="hero-full-wrapper">
+            <div class="text-content">
+              <h1>Julian Almario<br>
+                <span id="typed-strings">
+                  <span>Med Student</span>
+                  <span>Investigador</span>
+                  <span>Programador</span>
+                  <span>Ingeniero aficionado</span>
+                  <span>Y maś</span>
+                </span>
+                <span id="typed"></span>
+              </h1>
+
+              <div class="footer-social-fixed">
+                <a href="https://www.linkedin.com/in/julian-almario-loaiza/" class="social-icon" target="_blank" rel="noopener noreferrer"
+                  title="LinkedIn">
+                  <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/Julian-Almario" class="social-icon" target="_blank" rel="noopener noreferrer" title="GitHub">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/julianalmario_/" class="social-icon" target="_blank" rel="noopener noreferrer"
+                  title="Instagram">
+                  <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.youtube.com/@jalmario" class="social-icon" target="_blank" rel="noopener noreferrer"
+                  title="Youtube">
+                  <i class="fab fa-youtube" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.reddit.com/user/Jalmario_/" class="social-icon" target="_blank" rel="noopener noreferrer"
+                  title="Reddit">
+                  <i class="fab fa-reddit" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      type();
+      movingBackgroundImage();
+    });
+  </script>
+
+
+  <script type="text/javascript" src="{{ url_for('static', filename='js/animation.js') }}"></script>
+</body>
+
+</html>
