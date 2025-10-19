@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="code medcore y descarga" name="Julian Almario">
+
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link href="" rel="icon">
+
+  <title>MedCore</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+
+<body class="">
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+  <header>
+    <nav class="navbar  navbar-fixed-top navbar-default">
+      <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav ">
+            <li><a href="/" title="">Home</a></li>
+            <li><a href="/portafolio" title="">Portafolio</a></li>
+            <li><a href="/about" title="">Sobre mi</a></li>
+            <li><a href="/" title="">Blog</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <img src="{{ url_for('static', filename='img/images/work1.jpg') }}" class="img-responsive center-block"
+            alt="">
+          <div class="card-container">
+            <div class="readme-content text-justify">
+
+              <div class="row button-row center-block">
+                <div class="col-sm-offset-3 col-sm-6 text-center button-container">
+                  <a href="https://github.com/Julian-Almario/MedCore_APP" title="GitHub">
+                    <img class="img-responsive button-image" src="{{ url_for('static', filename='img/images/repository.png') }}"
+                      alt="Ir al codigo fuente">
+                  </a>
+                </div>
+              </div>
+              <p style="text-align: center;">
+                <img src="https://img.shields.io/github/license/Julian-Almario/medcore_APP" alt="License" />
+                <img src="https://img.shields.io/github/issues/Julian-Almario/medcore_app" alt="Issues" />
+                <img src="https://img.shields.io/github/stars/Julian-Almario/MedCore_APP" alt="Stars" />
+                <img src="https://img.shields.io/badge/python-3.10%2B-blue" alt="Python Version" />
+                <img src="https://img.shields.io/badge/flet-%F0%9F%90%8D-green" alt="Flet" />
+              </p>
+              <hr>
+              <p><strong>MedCore</strong> es una aplicación multiplataforma para <strong>móvil, web y escritorio</strong>,
+                desarrollada en Python utilizando el framework <a href="https://flet.dev">Flet</a>. Su objetivo es
+                centralizar calculadoras clínicas, valores de laboratorio de referencia y otros recursos útiles en una
+                plataforma <strong>intuitiva, modular y eficiente.</strong></p>
+
+              <hr>
+
+              <h3>Características</h3>
+              <ul>
+                <li><strong>Uso inmediato sin necesidad de inicio de sesión</strong></li>
+                <li><strong>Perlas clinicas mas recientes</strong></li>
+                <li><strong>Búsqueda interactiva</strong> por nombre o etiquetas</li>
+                <li><strong>Calculadoras médicas de uso frecuente</strong>:
+                  <ul>
+                    <li>Índice de Masa Corporal (IMC)</li>
+                    <li>Regla de Tres (Directa)</li>
+                    <li>Talla diana parental</li>
+                    <li>TFG (Ecuación de Schwartz 2009)</li>
+                    <li>Criterios SLICC para LES</li>
+                    <li>Puntajes qSOFA y SOFA (Sepsis)</li>
+                    <li>CKD-EPI 2021</li>
+                    <li>Brecha aniónica y sodio corregido</li>
+                    <li><strong>¡Y más!</strong></li>
+                  </ul>
+                </li>
+                <li><strong>Almacenamiento local</strong> con acceso completo sin conexión</li>
+                <li><strong>Base de datos de medicamentos</strong></li>
+                <li><strong>Edicion y creacion de datos de medicamentos</strong></li>
+                <li><strong>Interfaz moderna, fluida y adaptable</strong></li>
+                <li><strong>Modo oscuro permanente</strong></li>
+                <li><strong>Diseño modular y ampliable</strong></li>
+                <li><strong>Editor de notas personales</strong></li>
+              </ul>
+
+              <hr>
+
+              <h3>Tecnologías utilizadas</h3>
+              <ul>
+                <li><strong>Python 3.10+</strong></li>
+                <li><strong><a href="https://flet.dev/">Flet</a></strong> – Framework para interfaces web y de
+                  escritorio</li>
+                <li><strong>Arquitectura modular y escalable</strong></li>
+              </ul>
+
+              <hr>
+
+              <h3>Estructura</h3>
+              <pre><code>MedCore/
+├── app/
+│   ├── modules/
+│   ├── assets/
+│   ├── storage/
+│   ├── calculadoras/
+│   └── main.py
+│
+├── backend/
+│   ├── guias/
+│   ├── imagenes/
+│   ├── static/
+│   ├── app.py
+│   ├── requirements.txt
+│   └── vercel.json
+│
+├── README.md
+├── LICENSE
+├── CODE_OF_CONDUCT.md
+└── pyproject.toml
+</code></pre>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer-container text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>© Julian Andres Almario Loaiza </p>
+        </div>
+      </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navActivePage();
+    });
+  </script>
+
+  <script type="text/javascript" src="{{ url_for('static', filename='js/animation.js') }}"></script>
+</body>
+
+</html>

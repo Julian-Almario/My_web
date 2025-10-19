@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="rddd alarma y reloj pomodoro" name="Julian Almario">
+
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link href="./assets/favicon.ico" rel="icon">
+
+  <title>R.D.D.D</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+
+<body class="">
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+  <header>
+    <nav class="navbar  navbar-fixed-top navbar-default">
+      <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav ">
+            <li><a href="/" title="">Home</a></li>
+            <li><a href="/portafolio" title="">Portafolio</a></li>
+            <li><a href="/about" title="">Sobre mi</a></li>
+            <li><a href="/" title="">Blog</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <img src="{{ url_for('static', filename='img/images/work2-1.jpg') }}" class="img-responsive center-block"
+            alt="" style="max-width: 60%;">
+          <div class="card-container">
+            <div class="readme-content text-justify">
+
+              <div class="row button-row center-block">
+                <div class="col-sm-offset-3 col-sm-6 text-center button-container">
+                  <p style="text-align: center;">
+                    <a href="https://github.com/Julian-Almario/Reloj-De-Desconexion-Digital" title="GitHub">
+                      <img class="img-responsive button-image"
+                        src="{{ url_for('static', filename='img/images/repository.png') }}" alt="Ir al codigo fuente">
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <p style="text-align: center;">
+                <img src="https://img.shields.io/github/issues/Julian-Almario/Reloj-De-Desconexion-Digital"
+                  alt="Issues" />
+                <img src="https://img.shields.io/github/stars/Julian-Almario/Reloj-De-Desconexion-Digital"
+                  alt="Stars" />
+                <img src="https://img.shields.io/badge/python-3.10%2B-blue" alt="Python Version" />
+                <img src="https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=for-the-badge&logo=Raspberry-Pi"
+                  alt="Raspberry-P" />
+              </p>
+
+              <h1>R.D.D.D</h1>
+
+              <p>Este Reloj De Desconexion Digital por sus siglas (R.D.D.D) nació de mi idea de no querer usar la alarma
+                de mi teléfono celular al levantarme para evitar la exposición y abuso temprano de la gratificación
+                instantánea. También este proyecto tiene como objetivo secundario aprender y poner en práctica todo lo
+                que vaya aprendiendo en mi proceso de entendimiento más profundo de la ingeniería. Programa escrito en
+                MicroPython con el microcontrolador Raspberry pi pico H.</p>
+
+              <p><strong>Nota para cargar el programa:</strong> Copiar en la raspberry pi pico archivos .py y carpeta
+                img</p>
+              <hr>
+
+              <h2>Materiales</h2>
+              <ul>
+                <li>Mini protoboard x1</li>
+                <li>Raspberry pi pico H x1</li>
+                <li>Led x1</li>
+                <li>Resistencia x1</li>
+                <li>Pantalla LS1306</li>
+                <li>RTC 1306</li>
+                <li>Boton x1</li>
+                <li>Fotoresistor x1</li>
+                <li>Jumpers macho macho x2</li>
+                <li>Jumpers macho hembra x9</li>
+                <li>Jumpers hembra hembra x7</li>
+                <li>Materiales para construir a tu preferencia :)</li>
+              </ul>
+              <hr>
+
+              <h2>Circuito</h2>
+
+              <p class="center-block">
+                <img src="{{ url_for('static', filename='img/images/work2.jpg') }}" class="img-responsive center-block"
+                  alt="Schematic">
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer-container text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>© Julian Andres Almario Loaiza </p>
+        </div>
+      </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navActivePage();
+    });
+  </script>
+
+  <script type="text/javascript" src="{{ url_for('static', filename='js/animation.js') }}"></script>
+</body>
+
+</html>

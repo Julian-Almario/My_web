@@ -5,19 +5,14 @@
   <meta charset="UTF-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="description" name="description">
-  <meta name="google" content="notranslate" />
-  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+  <meta content="Portafolio de proyectos" name="Julian Almario">
 
-  <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
-  <link href="./assets/favicon.ico" rel="icon">
 
-  <title>Title page</title>  
-
-<link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet"></head>
+  <title>Portafolio</title>  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
 
 <body class="">
 <div id="site-border-left"></div>
@@ -37,10 +32,10 @@
 
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav ">
-          <li><a href="/" title="">Home</a></li>
-          <li><a href="/portafolio" title="">Portafolio</a></li>
-          <li><a href="/about" title="">Sobre mi</a></li>
-          <li><a href="./components.html" title="">Blog</a></li>
+            <li><a href="/" title="">Inicio</a></li>
+            <li><a href="/portafolio" title="">Portafolio</a></li>
+            <li><a href="https://orcid.org/0009-0001-9219-4185" title="">Investigaciones</a></li>
+            <li><a href="/about" title="">Sobre mi</a></li>
         </ul>
 
 
@@ -69,7 +64,7 @@
                 <div class="row">
                     <div class="col-sm-4">
 
-                      <a href="/trabajos" title="" class="black-image-project-hover">
+                      <a href="/medcore" title="" class="black-image-project-hover">
                         <img src="{{ url_for('static', filename='img/images/work1.jpg') }}" alt="" class="img-responsive">
                       </a>
                       <div class="card-container card-container-lg">
@@ -78,7 +73,7 @@
                       </div>
                     </div>
                     <div class="col-sm-4">
-                      <a href="/trabajos" title="" class="black-image-project-hover">
+                      <a href="/rddd" title="" class="black-image-project-hover">
                         <img src="{{ url_for('static', filename='img/images/work2.jpg') }}" alt="" class="img-responsive">
                       </a>
                       <div class="card-container card-container-lg">
@@ -87,7 +82,7 @@
                       </div>
                     </div>
                     <div class="col-sm-4">
-                      <a href="/trabajos" title="" class="black-image-project-hover">
+                      <a href="https://www.imigcur.app/" title="" class="black-image-project-hover">
                         <img src="{{ url_for('static', filename='img/images/work3.jpg') }}" alt="" class="img-responsive">
                       </a>
                       <div class="card-container card-container-lg">
