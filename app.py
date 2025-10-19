@@ -14,9 +14,13 @@ def about():
 def portafolio():
     return render_template('portafolio.html')
 
-@app.route('/trabajos')
+@app.route('/medcore')
 def trabajos():
-    return render_template('work.html')
+    return render_template('medcorework.html')
+
+@app.route('/rddd')
+def rddd():
+    return render_template('rdddwork.html')
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=8000, debug=True)
