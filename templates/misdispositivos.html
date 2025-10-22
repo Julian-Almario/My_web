@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="plantilla para post de blog" name="Julian Almario">
+
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="icon" href="{{ url_for('static', filename='img/images/perfil.jpg') }}" type="image/x-icon" />
+
+  <title>Mis dispositivos</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+
+<body class="">
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+
+  <header>
+    <nav class="navbar  navbar-fixed-top navbar-default">
+      <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav ">
+            <li><a href="/" title="">Home</a></li>
+            <li><a href="/portafolio" title="">Portafolio</a></li>
+            <li><a href="/blog" title="">Blog</a></li>
+            <li><a href="https://orcid.org/0009-0001-9219-4185" title="">Investigaciones</a></li>
+            <li><a href="/about" title="">Sobre mi</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="card-container">
+
+            <div class="content-post text-justify">
+
+              <h1 class=" text-center">Mis dispositivos</h1>
+
+              <hr>
+
+              <p class="text-center">
+                <img src="{{ url_for('static', filename='img/images/setup.jpg') }}" class="img-responsive center-block"
+                  alt="setup minimalista" style="max-width: 60%; height: auto; margin-top: 20px; margin-bottom: 20px;">
+              </p>
+
+              <h3>Filosofía del Minimalismo Digital</h3>
+
+              <p>Este artículo no es solo una lista de hardware, sino una reflexión sobre la filosofía detrás de mi
+                selección de dispositivos. Busco la eficiencia, la versatilidad y, sobre todo, evitar la sobrecarga
+                digital. Cada herramienta debe tener un propósito claro y no duplicar funciones innecesarias. Lo llamo
+                "lo justo y necesario", donde cada equipo es una extensión de mi productividad y no una fuente de
+                distracción.</p>
+
+              <p>Mantener un número limitado de dispositivos me permite enfocarme más en el trabajo y el estudio,
+                reduciendo el tiempo dedicado a la gestión, mantenimiento y actualización de sistemas redundantes.</p>
+
+              <hr>
+
+              <h3>Mi Ecosistema de Productividad</h3>
+
+              <p>Aqui detallo cada uno de los componenete de una parte de mi flujo de trabajo</p>
+
+              <ul>
+                <li><strong>Aspire A514-53 V1.16 - 16 GB RAM:</strong> Mi estación de trabajo principal. Con 16 GB de
+                  RAM, es lo suficientemente potente para la programación, la edición de documentos técnicos y la
+                  ejecución de entornos virtuales (VMs) o contenedores, manteniendo un buen equilibrio entre
+                  portabilidad y rendimiento. Es el centro neurálgico de mis proyectos de ingeniería e investigación.
+                </li>
+                <li><strong>Samsung Galaxy Note 9:</strong> El teléfono inteligente que combina productividad y
+                  entretenimiento. Lo valoro por el S Pen, que facilita la toma rápida de notas, el bocetado de
+                  ideas de circuitos o *wireframes*, y la anotación en PDFs. Su uso se limita estrictamente a la
+                  comunicación esencial y la captura de ideas fuera del escritorio.</li>
+                <li><strong>Samsung Galaxy Tab S6 Lite:</strong> Mi dispositivo dedicado a la lectura, el consumo de
+                  contenido educativo y el trabajo en modo tableta. Es ideal para leer artículos académicos, seguir
+                  tutoriales de programación y usar como bloc de notas digital sin las constantes interrupciones de las
+                  llamadas o notificaciones del teléfono principal. Su batería de larga duración lo hace perfecto para
+                  sesiones de estudio prolongadas.</li>
+              </ul>
+              <hr>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer-container text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>© Julian Andres Almario Loaiza </p>
+        </div>
+      </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      // Si tienes una función para resaltar la página activa en la nav
+      // navActivePage(); 
+    });
+  </script>
+
+  <script type="text/javascript" src="{{ url_for('static', filename='js/animation.js') }}"></script>
+</body>
+
+</html>

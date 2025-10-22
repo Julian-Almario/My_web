@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="Blog de cosas y temas" name="Julian Almario">
+
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="icon" href="{{ url_for('static', filename='img/images/perfil.jpg') }}" type="image/x-icon" />
+  <title>Blog</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+
+<body class="">
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+  <header>
+    <nav class="navbar  navbar-fixed-top navbar-default">
+      <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav ">
+            <li><a href="/" title="">Inicio</a></li>
+            <li><a href="/portafolio" title="">Portafolio</a></li>
+            <li><a href="/blog" title="">Blog</a></li>
+            <li><a href="https://orcid.org/0009-0001-9219-4185" title="">Investigaciones</a></li>
+            <li><a href="/about" title="">Sobre mi</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="section-container">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+          <div class="text-center">
+            <h1 class="h2">Blog</h1>
+            <p>Artículos, reflexiones, ideas, ciencia y más.</p>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="col-sm-8 col-sm-offset-2">
+            <a href="/blog/misdispositivos" title="Ir al artículo">
+              <article class="blog-entry">
+                <h3 class="blog-title">Mis dispositivos</h3>
+                <p class="blog-excerpt">Lo justo y necesario, minimalista </p>
+                <p class="blog-meta">Octubre 21, 2025</p>
+              </article>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer-container text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>© Julian Andres Almario Loaiza</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        navActivePage();
+      });
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/animation.js') }}"></script>
+</body>
+
+</html>
