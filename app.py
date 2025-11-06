@@ -29,3 +29,6 @@ def trabajos():
 @app.route('/rddd')
 def rddd():
     return render_template('rdddwork.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
